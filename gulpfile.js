@@ -120,7 +120,7 @@ const font = () => {
 // Watch changes and refresh page
 const watch = () => gulp.watch(
     [`${src}/*.html`, `${src}/JS/**/*.js`, `${src}/SASS/**/*.sass`, `${src}/IMG/**/*.*`],
-    gulp.series(img, script, style_css, html,  reload));
+    gulp.series(img, font, script, style_css, html,  reload));
 
 // Development tasks
 const dev = gulp.series(img, font, script, style_css, html, serve, watch);
