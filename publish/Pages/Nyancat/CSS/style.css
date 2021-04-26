@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+
+
+
+
+html {
+    margin: 0px;
+    padding: 0px;
+}
+
+
+@keyframes nya-colors {
+    0% {
+        background-color: rgb(87, 0, 185);
+    }
+
+    25% {
+        background-color: #ad0000;
+    }
+
+    50% {
+
+        background-color: rgb(0, 117, 185);
+    }
+
+    75% {
+        background-color: rgb(0, 143, 19);
+    }
+
+    100% {
+        background-color: rgb(87, 0, 185);
+    }
+}
+
+body {
+    animation: nya-colors 5s infinite;
+    width: 100%;
+    overflow: hidden;
+}
+
+.body_triggered {
+    animation: nya-colors 1s infinite;
+}
+
+
+@keyframes nyan-Movement {
+    0% {
+        transform: translateX(-500px);
+    }
+
+    100% {
+        transform: translateX(100vw);
+    }
+}
+
+@keyframes nya-colors-h {
+    0% {
+        color: rgb(87, 0, 185);
+    }
+
+    25% {
+        color: #ad0000;
+    }
+
+    50% {
+
+        color: rgb(0, 117, 185);
+    }
+
+    75% {
+        color: rgb(0, 143, 19);
+    }
+
+    100% {
+        color: rgb(87, 0, 185);
+    }
+}
+
+
+.flex-center {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.flex_center_h {
+    position: absolute;
+    transform: translateY(-50%);
+    top: 50%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h1 {
+    color: white;
+    font-family: Roboto;
+    text-align: center;
+    font-size: 40pt;
+    text-transform: uppercase;
+    animation: nya-colors-h 5s ease infinite;
+    margin: 0px;
+}
+
+.NyanCat_Title_triggered {
+    animation: nya-colors-h 0.3s ease infinite;
+}
+
+
+
+.TriggerModeBox {
+    width: 30%;
+    min-width: 400px;
+    background: white;
+    transform: translateX(-50%) translateY(-50%);
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    z-index: 2;
+    border-radius: 30px;
+    padding: 30px;
+
+}
+
+.TriggerModeBox p {
+    font-family: Roboto;
+    text-align: center;
+    color: rgb(54, 54, 54);
+    font-size: 16pt;
+    width: 50%;
+    min-width: 500px;
+}
+
+
+.NyanCat {
+    width: 400px;
+    animation: nyan-Movement 4s ease infinite;
+    z-index: 1;
+    transition: all 0.5s ease;
+}
+
+.NyanCat:hover{
+    width: 500px;
+}
+
+.NyanSpeed_1 {
+    animation: nyan-Movement 3s ease infinite;
+}
+
+.NyanSpeed_2 {
+    animation: nyan-Movement 2.5s ease infinite;
+}
+
+.TriggerSpeed_1 {
+    animation: nyan-Movement 1s linear infinite;
+}
+
+.TriggerSpeed_2 {
+    animation: nyan-Movement 0.7s linear infinite;
+}
+
+.TriggerSpeed_3 {
+    animation: nyan-Movement 0.5s linear infinite;
+}
+
+
+.ButtonTrigger {
+    animation: nya-colors-h 5s ease infinite;
+    font-family: Roboto;
+    font-size: 14pt;
+    background: white;
+    max-width: 150px;
+    text-align: center;
+    border-radius: 20px;
+    padding: 10px;
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.226);
+    transition: all 0.5s ease;
+}
+
+.ButtonTrigger:hover {
+    color: white;
+    animation: nya-colors 5s infinite;
+    cursor: pointer;
+}
+
+.Buttongetriggert:hover {
+    animation: nya-colors 0.3s infinite;
+}
+
+.audio_nyan {
+    display: none;
+    margin-top: 20px;
+}
+
+.audio_nyan_triggered {
+    display: block;
+}
+
+footer{
+    position:absolute;
+    bottom: 30px;
+    color: rgba(255, 255, 255, 0.39);
+    font-family: Roboto;
+    transform: translateX(-50%);
+    left: 50%;
+}
