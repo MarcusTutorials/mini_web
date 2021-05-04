@@ -1,0 +1,2 @@
+var ButtonSound=document.querySelector(".ButtonSound"),DrumsActive=!1,Dubstep_1Active=!1,Drums=document.getElementById("Drums"),Dubstep_1=document.getElementById("Dubstep_1"),audio_file=new Audio("../Sounds/Drums.ogg");function reply_click(t){var e=document.getElementById(t);e.classList.toggle("activebtn"),e.firstChild.classList.toggle("invertIcon")}audio_file.addEventListener("timeupdate",(function(){this.currentTime>this.duration-.44&&(this.currentTime=0,this.play())}));
+//# sourceMappingURL=script.js.map
