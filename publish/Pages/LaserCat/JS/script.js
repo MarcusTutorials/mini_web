@@ -1,0 +1,2 @@
+!function(){var e=document.querySelector("body"),t=document.querySelector(".CatBox");e.addEventListener("mousemove",(function(e){var a=(window.innerWidth/2-e.pageX)/25,n=(window.innerHeight/2-e.pageY)/25;t.style.transform="rotateY("+-a+"deg) rotateX("+n+"deg)"}));var a=document.getElementsByClassName("Laser");e.addEventListener("mousedown",(function(e){for(i=0;i<a.length;i++)a[i].classList.contains("LaserActivate")?a[i].classList.remove("LaserActivate"):a[i].classList.add("LaserActivate")}))}();
+//# sourceMappingURL=script.js.map
